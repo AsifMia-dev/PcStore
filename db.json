@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "asif",
+      "password": "asif123",
+      "role": "user"
+    },
+    {
+      "id": "1760630659694",
+      "username": "labib",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "1760633837801",
+      "username": "fouad",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "1760633882501",
+      "username": "Ibrahim",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "1760634236518",
+      "username": "Ripon",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "1760634349651",
+      "username": "khairul",
+      "password": "1234",
+      "role": "user"
+    }
+  ]
+}
