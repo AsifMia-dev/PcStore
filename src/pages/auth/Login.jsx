@@ -10,6 +10,8 @@ import { FloatLabel } from "primereact/floatlabel";
 import { Toast } from "primereact/toast";
 import { Message } from "primereact/message";
 
+import Layout from "../../components/Layout";
+
 
 import {AuthContext} from "../../context/AuthContext";
 
@@ -73,7 +75,10 @@ const Login = () => {
  }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <Layout>
+
+    
+    <div className="flex items-center justify-center min-h-screen bg-gray-50">
 
       <Toast ref={toast} position="top-center" />
       
@@ -118,7 +123,7 @@ const Login = () => {
           <p className="text-center text-sm text-gray-600 mt-4">
             Don’t have an account?{" "}
             <Link
-              to="/res"
+              to="/reg"
               className="text-blue-500 hover:underline font-medium"
             >
               Register
@@ -127,6 +132,8 @@ const Login = () => {
         </form>
       </Card>
     </div>
+    </Layout>
+    
   );
 };
 

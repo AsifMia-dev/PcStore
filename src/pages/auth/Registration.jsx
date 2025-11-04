@@ -7,6 +7,10 @@ import { Message } from "primereact/message";
 import { FloatLabel } from "primereact/floatlabel";
 import { Toast } from "primereact/toast";
 import { useRef } from "react";
+// import { baseUrl } from "../../Helper/baseUrlHelper";
+
+import Layout from "../../components/Layout";
+
 
 import { useNavigate } from "react-router-dom";
 
@@ -29,11 +33,10 @@ const Registration = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    password: "",
-    confirmPassword: "",
+    password: ""
   });
   const [error, setError] = useState({});
-  const [success, setSuccess] = useState(null);
+  // const [success, setSuccess] = useState(null);
 
     const handleChange = (e) => {
       setFormData({
@@ -49,7 +52,7 @@ const Registration = () => {
       // Check if usernmame already exists
       const checkUserRespones = await fetch(`${baseUrl}/users?username=${formData.name}`);
       const userData = await checkUserRespones.json();
-
+      console.log(checkUserRespones);
       console.log(userData);
       if (userData.length > 0) {
         setError({ nameExist: "Username already exists" });
@@ -61,7 +64,14 @@ const Registration = () => {
         headers:{
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({id:generateId(), username:formData.name, password:formData.password, role: "user"})
+        body: JSON.stringify(
+          {
+            id: generateId(),
+            username: formData.name,
+            email: formData.email,
+            password: formData.password,
+            role: "user"
+          })
 
       });
 
@@ -82,6 +92,9 @@ const Registration = () => {
 
 
   return (
+    <Layout>
+
+    
     <div  className="flex justify-center items-center min-h-screen bg-gray-100">
       <Toast ref={toast} position="top-center" />
       {error.submitError && (
@@ -157,6 +170,7 @@ const Registration = () => {
         </form>
       </Card>
     </div>
+    </Layout>
   );
 };
 

@@ -7,40 +7,193 @@
       "role": "admin"
     },
     {
-      "id": "2",
-      "username": "asif",
-      "password": "asif123",
+      "id": "1761064971646",
+      "username": "Asif",
+      "email": "amia221044@bsce.uiu.ac.bd",
+      "password": "asif12",
       "role": "user"
     },
     {
-      "id": "1760630659694",
-      "username": "labib",
+      "id": "1761073959424",
+      "username": "Labib",
+      "email": "labib@gamil.com",
       "password": "1234",
       "role": "user"
     },
     {
-      "id": "1760633837801",
-      "username": "fouad",
+      "id": "1761074138581",
+      "username": "Md. Ibrahim Zihad",
+      "email": "mzihad221257@bscse.uiu.ac.bd",
       "password": "1234",
       "role": "user"
     },
     {
-      "id": "1760633882501",
-      "username": "Ibrahim",
-      "password": "1234",
-      "role": "user"
-    },
-    {
-      "id": "1760634236518",
-      "username": "Ripon",
-      "password": "123",
-      "role": "user"
-    },
-    {
-      "id": "1760634349651",
-      "username": "khairul",
+      "id": "1762278502721",
+      "username": "Rabita",
+      "email": "rabita@gmail.com",
       "password": "1234",
       "role": "user"
     }
-  ]
+  ],
+  "Products": {
+    "Desktop": [
+      {
+        "id": "1761081234567",
+        "Name": "AMD Ryzen 5 3400G Processor DesAMD Ryzen 5 3400G Processor Desktop PC",
+        "Brand": "AMD",
+        "Type": "Desktop",
+        "Price": 23500,
+        "Image": "https://i.postimg.cc/KzVydZdV/AMD-Ryzen-5-3400G-Processor-Des-AMD-Ryzen-5-3400G-Processor-Desktop-PC-23-500.webp",
+        "Description": "Powerful 4-core, 8-thread processor with built-in Radeon Vega 11 graphics, perfect for smooth gaming and multitasking."
+      },
+      {
+        "id": "1761082234568",
+        "Name": "Lenovo IdeaCentre 3 07IRB8 Core i3 13th Gen Brand PC",
+        "Brand": "Lenovo",
+        "Type": "Desktop",
+        "Price": 27000,
+        "Image": "https://i.postimg.cc/dtRVTybb/Lenovo-Idea-Centre-3-07IRB8-Core-i3-13th-Gen-Brand-PC-52.webp",
+        "Description": "Efficient 6-core, 12-thread processor delivering reliable performance for everyday computing and light gaming."
+      },
+      {
+        "id": "1761083234569",
+        "Name": "AMD Ryzen 5 7600 Desktop PC",
+        "Brand": "AMD",
+        "Type": "Desktop",
+        "Price": 55000,
+        "Image": "https://i.postimg.cc/0Nhs45gB/AMD-Ryzen-5-7600-Desktop-PC-57-200.webp",
+        "Description": "Powerful 6-core, 12-thread processor designed for smooth multitasking and moderate gaming performance."
+      },
+      {
+        "id": "1761084234570",
+        "Name": "Dell Vostro 3910 Core i5 12th Gen Desktop PC",
+        "Brand": "Dell",
+        "Type": "Desktop",
+        "Price": 60000,
+        "Image": "https://i.postimg.cc/L4tpyMyF/DELL-Opti-Plex-7010-Core-i3-13th-Gen-8GB-RAM-Desktop-PC-62-390.webp",
+        "Description": "Reliable 6-core, 12-thread processor offering solid performance for work and casual gaming."
+      },
+      {
+        "id": "1761085234571",
+        "Name": "Intel Core i5 14500 14th Gen Desktop PC",
+        "Brand": "Intel",
+        "Type": "Desktop",
+        "Price": 62000,
+        "Image": "https://i.postimg.cc/MT1hrym6/Intel-Core-i5-14500-14th-Gen-Desktop-PC-56-400.webp",
+        "Description": "Versatile 6-core, 12-thread processor ideal for multitasking and light gaming experiences."
+      }
+    ],
+    "Laptop": [
+      {
+        "id": "2761085234571",
+        "Name": "15-fc0266au-01-500x500FHD Laptop",
+        "Brand": "HP",
+        "Type": "Laptop",
+        "Price": 32000,
+        "Image": "https://i.postimg.cc/T3ZNMKwH/15-fc0266au-01-500x500FHD-Laptop.webp",
+        "Description": "AMD Ryzen 3 3250U processor with integrated Radeon graphics, suitable for everyday tasks and light multitasking."
+      },
+      {
+        "id": "2761086234572",
+        "Name": "Acer Aspire Lite",
+        "Brand": "Acer",
+        "Type": "Laptop",
+        "Price": 62000,
+        "Image": "https://i.postimg.cc/rsFQCWnM/Acer-Aspire-Lite-60-700.webp",
+        "Description": "Intel Core i5-1135G7 processor with integrated Iris Xe graphics, ideal for productivity and light creative tasks."
+      },
+      {
+        "id": "2761087234573",
+        "Name": "Acer TravelLite",
+        "Brand": "Acer",
+        "Type": "Laptop",
+        "Price": 58000,
+        "Image": "https://i.postimg.cc/3x3Qz2s1/Dell-Inspiron-15-3520-Laptop-58-000.webp",
+        "Description": "Intel Core i5-1235U processor with integrated Iris Xe graphics, perfect for multitasking and everyday computing."
+      },
+      {
+        "id": "2761088234574",
+        "Name": "HP 15-fc0239AU",
+        "Brand": "HP",
+        "Type": "Laptop",
+        "Price": 46000,
+        "Image": "https://i.postimg.cc/BbVcTzPx/HP-15-fc0239AU-46-000.webp",
+        "Description": "Intel Core i5-1235U processor with integrated Iris Xe graphics, perfect for multitasking and everyday computing."
+      },
+      {
+        "id": "2761089234575",
+        "Name": "Lenovo IdeaPad Slim 3 15ABR8 Laptop",
+        "Brand": "Lenovo",
+        "Type": "Laptop",
+        "Price": 62000,
+        "Image": "https://i.postimg.cc/X7BwMQyR/Lenovo-Idea-Pad-Slim-3-15ABR8-Laptop-66-000.webp",
+        "Description": "Intel Core i5-1235U processor with integrated Iris Xe graphics, perfect for multitasking and everyday computing."
+      },
+      {
+        "id": "2761090234576",
+        "Name": "Lenovo ThinkPad P14s Gen 2 Core i5 Business Laptop",
+        "Brand": "Lenovo",
+        "Type": "Laptop",
+        "Price": 58000,
+        "Image": "https://i.postimg.cc/FKpSb629/Lenovo-Think-Pad-P14s-Gen-2-Core-i5-Business-Laptop-100-100.webp",
+        "Description": "Intel Core i5-1235U processor with integrated Iris Xe graphics, perfect for multitasking and everyday computing."
+      }
+    ],
+    "Components": [
+      {
+        "id": "3761085234571",
+        "Name": "DeepCool AG620 Dual-Tower 120mm CPU Air Cooler",
+        "Brand": "",
+        "Type": "Components",
+        "Price": 4800,
+        "Image": "https://i.postimg.cc/CxVn3Y0n/Deep-Cool-AG620-Dual-Tower-120mm-CPU-Air-Cooler-4-880.webp",
+        "Description": "Efficient dual-tower air cooler with two 120mm fans, providing excellent thermal performance for high-performance CPUs."
+      },
+      {
+        "id": "3761086234572",
+        "Name": "Deepcool MATREXX 40 Micro-ATX Case",
+        "Brand": "",
+        "Type": "Components",
+        "Price": 3900,
+        "Image": "https://i.postimg.cc/Zqw9vddr/Deepcool-MATREXX-40-Micro-ATX-Case-3-900.jpg",
+        "Description": "Compact Micro-ATX case with a sleek design, offering good airflow and easy cable management for budget builds."
+      },
+      {
+        "id": "3761087234573",
+        "Name": "Intel 10th Gen Core i3 10100F Processor",
+        "Brand": "Intel",
+        "Type": "Components",
+        "Price": 7900,
+        "Image": "https://i.postimg.cc/9zHzHP6h/Intel-10th-Gen-Core-i3-10100F-Processor-7-600.jpg",
+        "Description": "Quad-core processor with Hyper-Threading, delivering solid performance for everyday computing and light gaming."
+      },
+      {
+        "id": "3761088234574",
+        "Name": "Intel Pentium Gold G6400 10th gen Coffee Lake Processor",
+        "Brand": "Intel",
+        "Type": "Components",
+        "Price": 7500,
+        "Image": "https://i.postimg.cc/g2Pgkn80/Intel-Pentium-Gold-G6400-10th-gen-Coffee-Lake-Processor-6-500.jpg",
+        "Description": "Dual-core processor offering reliable performance for basic computing tasks and office applications."
+      },
+      {
+        "id": "3761089234575",
+        "Name": "Netac N535S 120GB 2.5-inch SATAIII SSD",
+        "Brand": "Western Digital",
+        "Type": "Components",
+        "Price": 8500,
+        "Image": "https://i.postimg.cc/9MSp3Mch/Netac-N535S-120GB-2-5-inch-SATAIII-SSD-1-300.jpg",
+        "Description": "Fast NVMe SSD offering quick boot times and improved overall system responsiveness."
+      },
+      {
+        "id": "3761090234576",
+        "Name": "XIGMATEK Gemini II Queen ARGB Mini Tower Gaming Casing",
+        "Brand": "XIGMATEK",
+        "Type": "Components",
+        "Price": 4200,
+        "Image": "https://i.postimg.cc/YCkxBTB7/XIGMATEK-Gemini-II-Queen-ARGB-Mini-Tower-Gaming-Casing-4-500.jpg",
+        "Description": "Stylish mini tower case with ARGB lighting, designed for compact gaming builds with good airflow."
+      }
+    ]
+  }
 }

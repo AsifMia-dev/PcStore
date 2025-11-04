@@ -39,13 +39,13 @@ const Header = () => {
   );
 
   return (
-   <div className="px-10 shadow-sm sticky top-0 z-50 bg-white">
+   <div className="px-10 shadow-sm sticky top-0 z-50 ">
     
     {/* Center wrapper */}
         
         <Menubar
-            model={items}
             start={start}
+            model={items}
             end={end}
             className="border-none bg-transparent"
         />

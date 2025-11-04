@@ -3,6 +3,38 @@ import { Divider } from "primereact/divider";
 import { Button } from "primereact/button";
 
 const Footer = () => {
+  const Links = [
+          {
+            Name : "Home",
+            link: "/"
+          },
+          {
+            Name : "Build PC",
+            link: "/builder"
+          },
+          {
+            Name : "About",
+            link: "/about"
+          },
+          {
+            Name : "Contact",
+            link: "/contact"
+          }
+          ];
+  const Support = [
+    {
+      Name : "FAQ",
+      link: "/faq"
+    },
+    {
+      Name : "Privacy Policy",
+      link: "/privacy"
+    },
+    {
+      Name : "Terms & Conditions",
+      link: "/terms"  
+    }
+  ]
   return (
     <footer className=" bg-gray-900 text-gray-300 py-10 mt-10 ">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -17,13 +49,15 @@ const Footer = () => {
         </div>
 
         {/* Links */}
+        
         <div>
           <h2 className="text-lg font-semibold text-white mb-3">Quick Links</h2>
           <ul className="space-y-2 text-sm">
-            <li><a href="/" className="hover:text-white">Home</a></li>
-            <li><a href="/builder" className="hover:text-white">Build PC</a></li>
-            <li><a href="/about" className="hover:text-white">About</a></li>
-            <li><a href="/contact" className="hover:text-white">Contact</a></li>
+            {
+              Links.map((linkItem,index) =>(
+                <li key={index}><a href={linkItem.link} className="hover:text-white">{linkItem.Name}</a></li> 
+              ))
+            }
           </ul>
         </div>
 
@@ -31,9 +65,11 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-semibold text-white mb-3">Support</h2>
           <ul className="space-y-2 text-sm">
-            <li><a href="/faq" className="hover:text-white">FAQ</a></li>
-            <li><a href="/privacy" className="hover:text-white">Privacy Policy</a></li>
-            <li><a href="/terms" className="hover:text-white">Terms & Conditions</a></li>
+            {
+              Support.map((supportItem,index) =>(
+                <li key={index}><a href={supportItem.link} className="hover:text-white">{supportItem.Name}</a></li> 
+              ))
+            }
           </ul>
         </div>
 
