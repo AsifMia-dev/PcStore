@@ -39,7 +39,7 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl max-w-xl mt-4">
                 Customize your computer with the best components and expert recommendations. Get the perfect setup for gaming, work, or creativity.
             </p>
-            <div className='mt-3 gap-3'>
+            <div className='mt-4 flex flex-row gap-4'>
                 <Link to="#">
                     <Button
                         label="Start Building"
@@ -49,7 +49,7 @@ const HeroSection = () => {
                 <Link to="#" >
                     <Button
                         label="Shop Pre-Build PCs"
-                        className="bg-green-400 text-white border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors"
+                        className=" text-white border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors"
                         />
                 </Link>
             </div>
