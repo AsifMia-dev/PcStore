@@ -33,6 +33,13 @@
       "email": "rabita@gmail.com",
       "password": "1234",
       "role": "user"
+    },
+    {
+      "id": "1762511696111",
+      "username": "Asif Mia",
+      "email": "asifarian320@gmail.com",
+      "password": "123",
+      "role": "user"
     }
   ],
   "Products": {

@@ -49,7 +49,7 @@ const HeroSection = () => {
                 <Link to="#" >
                     <Button
                         label="Shop Pre-Build PCs"
-                        className=" text-white border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors"
+                        className="text-white p-button-outlined rounded-lg"
                         />
                 </Link>
             </div>
