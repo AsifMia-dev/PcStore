@@ -16,7 +16,7 @@ const CartPage = () => {
     }));
     setCartItems(initialCart);
   },[user])
-  console.log("Cart Items:", cartItems);
+  console.log("Cart Items:", user?.cart);
 
   return (
     <div>

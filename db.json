@@ -12,7 +12,7 @@
       "email": "amia221044@bsce.uiu.ac.bd",
       "password": "asif12",
       "role": "user",
-      "cart" : []
+      "cart": []
     },
     {
       "id": "1761073959424",
@@ -20,7 +20,7 @@
       "email": "labib@gamil.com",
       "password": "1234",
       "role": "user",
-      "cart" : []
+      "cart": []
     },
     {
       "id": "1761074138581",
@@ -28,7 +28,7 @@
       "email": "mzihad221257@bscse.uiu.ac.bd",
       "password": "1234",
       "role": "user",
-      "cart" : []
+      "cart": []
     },
     {
       "id": "1762278502721",
@@ -36,7 +36,7 @@
       "email": "rabita@gmail.com",
       "password": "1234",
       "role": "user",
-      "cart" : []
+      "cart": []
     },
     {
       "id": "1762511696111",
@@ -44,7 +44,20 @@
       "email": "asifarian320@gmail.com",
       "password": "123",
       "role": "user",
-      "cart" : []
+      "cart": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 1
+        }
+      ]
     },
     {
       "id": "1762968544567",
@@ -52,7 +65,7 @@
       "email": "morshed@gmail.com",
       "password": "1234",
       "role": "user",
-      "cart" : []
+      "cart": []
     }
   ],
   "Products": {
