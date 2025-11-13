@@ -10,7 +10,7 @@ const RouteComponent = () => {
   return (
       <Routes>
         {
-          allRouters.map((route,index) =>(
+          allRouters.map((route) =>(
             <Route path = {route.path} element={renderRouterElement(route)} />
           ))
         }

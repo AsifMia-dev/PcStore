@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Card } from "primereact/card";
 import { InputText } from "primereact/inputtext";
@@ -23,6 +24,8 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 const Login = () => {
+
+  const navigate = useNavigate();
 
   const toast = useRef(null);
 
@@ -57,8 +60,9 @@ const Login = () => {
           detail: 'Congratulations, Login successful!', 
           life: 3000  
         });
-        
-
+        setTimeout(() => {
+          navigate("/user/home");
+        }, 3000);
       }
       else{
         toast.current.show({

@@ -11,35 +11,48 @@
       "username": "Asif",
       "email": "amia221044@bsce.uiu.ac.bd",
       "password": "asif12",
-      "role": "user"
+      "role": "user",
+      "cart" : []
     },
     {
       "id": "1761073959424",
       "username": "Labib",
       "email": "labib@gamil.com",
       "password": "1234",
-      "role": "user"
+      "role": "user",
+      "cart" : []
     },
     {
       "id": "1761074138581",
       "username": "Md. Ibrahim Zihad",
       "email": "mzihad221257@bscse.uiu.ac.bd",
       "password": "1234",
-      "role": "user"
+      "role": "user",
+      "cart" : []
     },
     {
       "id": "1762278502721",
       "username": "Rabita",
       "email": "rabita@gmail.com",
       "password": "1234",
-      "role": "user"
+      "role": "user",
+      "cart" : []
     },
     {
       "id": "1762511696111",
       "username": "Asif Mia",
       "email": "asifarian320@gmail.com",
       "password": "123",
-      "role": "user"
+      "role": "user",
+      "cart" : []
+    },
+    {
+      "id": "1762968544567",
+      "username": "Morshed",
+      "email": "morshed@gmail.com",
+      "password": "1234",
+      "role": "user",
+      "cart" : []
     }
   ],
   "Products": {

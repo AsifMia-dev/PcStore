@@ -3,8 +3,11 @@ import { Menubar } from "primereact/menubar";
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 const Header = () => {
+  const {user,logout} = React.useContext(AuthContext);
+  console.log("Header User:", user);
   const items = [
     { label: "Home", icon: "pi pi-home", url: "/" },
     { label: "Build PC", icon: "pi pi-desktop", url: "/build-pc" },
@@ -26,14 +29,29 @@ const Header = () => {
           className="p-button-rounded p-button-outlined"
         />
       </Link>
+      {
+        !user ?(
+        <Link to="/login">
+          <Button
+            label="Login"
+            icon="pi pi-user"
+            className="p-button-text text-blue-600"
+          />
+        </Link>
 
-      <Link to="/login">
-        <Button
-          label="Login"
-          icon="pi pi-user"
-          className="p-button-text text-blue-600"
-        />
-      </Link>
+        ) : 
+        (
+         <>
+          <h1>{user.username}</h1>
+          <Button
+            label="Logout"
+            icon="pi pi-sign-out" 
+            className="p-button-text text-red-600"
+            onClick={logout}
+            />
+         </> 
+        )
+      }
       
     </div>
   );

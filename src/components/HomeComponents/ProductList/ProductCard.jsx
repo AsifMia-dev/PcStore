@@ -34,7 +34,7 @@ const ProductCard = () => {
       const Keys = Object.keys(Products);
       const Values = Keys.map((key) => Products[key]).flat();
       setAllProducts(Values);
-      setProducts(Values);ch
+      setProducts(Values);
 
     };
     getProducts();
