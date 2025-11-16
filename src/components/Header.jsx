@@ -7,7 +7,6 @@ import { AuthContext } from "../context/AuthContext";
 
 const Header = () => {
   const {user,logout} = React.useContext(AuthContext);
-  console.log("Header User:", user);
   const items = [
     { label: "Home", icon: "pi pi-home", url: "/" },
     { label: "Build PC", icon: "pi pi-desktop", url: "/build-pc" },

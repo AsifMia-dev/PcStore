@@ -101,7 +101,7 @@ const ProductCard = () => {
               </p>
               <div className='mt-auto py-2 flex flex-row justify-between items-center'>
                 <span className="text-xl font-bold text-blue-600">
-                  {item.Price} ৳
+                  Tk {item.Price.toLocaleString()}
                 </span>
                 {
                   user?.cart && user.cart.some( cartItem => cartItem.id === item.id) ? (

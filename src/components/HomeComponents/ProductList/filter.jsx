@@ -21,7 +21,7 @@ const Filter = ({filterProducts}) => {
           <Button
             key={filterName}
             label={filterName}
-            className={`w-20 ${activeFilter === filterName ? 'p-button-primary' : 'p-button-outlined'} ${filterName === "Components" ? "w-40" : "w-20"}`}
+            className={`w-30 ${activeFilter === filterName ? 'p-button-primary' : 'p-button-outlined'} ${filterName === "Components" ? "w-40" : "w-20"}`}
             onClick={()=>handleActive(filterName)}
           />
         ))
