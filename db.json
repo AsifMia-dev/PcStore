@@ -46,15 +46,7 @@
       "role": "user",
       "cart": [
         {
-          "id": "1761081234567",
-          "itemQuantity": 1
-        },
-        {
-          "id": "1761082234568",
-          "itemQuantity": 1
-        },
-        {
-          "id": "1761083234569",
+          "id": "1761084234570",
           "itemQuantity": 1
         }
       ]
@@ -65,7 +57,24 @@
       "email": "morshed@gmail.com",
       "password": "1234",
       "role": "user",
-      "cart": []
+      "cart": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 4
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 2
+        },
+        {
+          "id": "2761086234572",
+          "itemQuantity": 6
+        },
+        {
+          "id": "2761085234571",
+          "itemQuantity": 1
+        }
+      ]
     }
   ],
   "Products": {
@@ -228,5 +237,41 @@
         "Description": "Stylish mini tower case with ARGB lighting, designed for compact gaming builds with good airflow."
       }
     ]
-  }
+  },
+  "order": [
+    {
+      "id": "a5a0",
+      "userId": "1762968544567",
+      "date": "2025-11-16T17:50:53.786Z",
+      "status": "Pending"
+    },
+    {
+      "id": "e39b",
+      "userId": "1762968544567",
+      "date": "2025-11-16T19:03:01.206Z",
+      "status": "Pending"
+    },
+    {
+      "id": "ecbe",
+      "userId": "1762968544567",
+      "info": {
+        "name": "Morshed",
+        "phone": "01793310237",
+        "location": "uttar Badda"
+      },
+      "date": "2025-11-16T19:05:01.135Z",
+      "status": "Pending"
+    },
+    {
+      "id": "794f",
+      "userId": "1762511696111",
+      "info": {
+        "name": "Rabita",
+        "phone": "01793310237",
+        "location": "Nakshi"
+      },
+      "date": "2025-11-17T09:26:22.536Z",
+      "status": "Pending"
+    }
+  ]
 }
