@@ -7,9 +7,11 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import { AuthContext } from '../../context/AuthContext';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-export default function CheckoutComponent() {
+export default function CheckoutComponent({setCartItems}) {
+  const Navigate = useNavigate();
   const  {user , login} = useContext(AuthContext);
   const [formData, setFormData] = useState({
     name: '',
@@ -57,14 +59,17 @@ export default function CheckoutComponent() {
      const order = {
       userId : user.id,
       info : {...formData},
+      products : [...user.cart],
       date: new Date().toISOString(),
       status: "Pending",
      }
-     console.log(order);
      try{
        await axios.post(`http://localhost:3000/order`,{
          ...order
        })
+       await axios.patch(`http://localhost:3000/users/${user.id}`, {
+          cart: []
+        });
      }catch(err){
       console.log("Order Error Ocurred ",err);
      }
@@ -77,16 +82,17 @@ export default function CheckoutComponent() {
     if (Object.keys(newErrors).length === 0) {
       setSubmitted(true);
       orderUpdateOnServer();
-      console.log('Form submitted:', formData);
+      setCartItems([]);
+      user.cart = [];
+      
     } else {
       setErrors(newErrors);
     }
   };
 
   const handleReset = () => {
-    setFormData({ name: '', phone: '', location: '' });
-    setErrors({});
-    setSubmitted(false);
+    setTimeout(() => { Navigate("/user/home") },2000) ;
+    
   };
 
   if (submitted) {
@@ -102,7 +108,7 @@ export default function CheckoutComponent() {
               <p className="mb-2"><strong>Phone:</strong> {formData.phone}</p>
               <p><strong>Location:</strong> {formData.location}</p>
             </div>
-            <Button label="Place Another Order" icon="pi pi-shopping-cart" onClick={handleReset} />
+            <Button label="Ok" icon="pi pi-shopping-cart" onClick={handleReset} />
           </div>
         </Card>
       </div>
@@ -158,20 +164,12 @@ export default function CheckoutComponent() {
             {errors.location && <small className="text-red-500">{errors.location}</small>}
           </div>
 
-          <div className="flex gap-2 pt-4">
+          <div className="pt-4 items-center">
             <Button 
               type="submit" 
-              label="Complete Order" 
-              icon="pi pi-check" 
-              className="flex-1"
-            />
-            <Button 
-              type="button" 
-              label="Clear" 
-              icon="pi pi-times" 
-              onClick={handleReset}
-              severity="secondary"
-              outlined
+              label="Order Now" 
+              className="w-full"
+              
             />
           </div>
         </form>
