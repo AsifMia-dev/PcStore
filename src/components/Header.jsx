@@ -4,8 +4,10 @@ import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const Navigate = useNavigate();
   const {user,logout} = React.useContext(AuthContext);
   const items = [
     { label: "Home", icon: "pi pi-home", url: "/" },
@@ -19,15 +21,32 @@ const Header = () => {
       <span className="text-xl font-bold text-blue-600">TechCore</span>
     </Link>
   );
-
   const end = (
     <div className="flex items-center gap-4">
-     <Link to="/cart">
-        <Button
-          icon="pi pi-shopping-cart"
-          className="p-button-rounded p-button-outlined"
-        />
+      <Link to="/cart">
+        <div className="relative inline-block">
+          <Button
+            icon="pi pi-shopping-cart"
+            className="p-button-rounded p-button-outlined"
+          />
+
+          {/* Cart Quantity Badge */}
+          {user?.cart?.length > 0 && (
+            <span
+              className="
+                absolute -top-1 -right-1
+                bg-red-600 text-white
+                text-xs font-bold
+                rounded-full
+                w-5 h-5 flex items-center justify-center
+              "
+            >
+              {user.cart.length}
+            </span>
+          )}
+        </div>
       </Link>
+
       {
         !user ?(
         <Link to="/login">
@@ -41,7 +60,7 @@ const Header = () => {
         ) : 
         (
          <>
-          <h1>{user.username}</h1>
+          <h1 className="hover:underline **cursor-pointer**" onClick={() => Navigate("/profile")}>{user.username}</h1>
           <Button
             label="Logout"
             icon="pi pi-sign-out" 

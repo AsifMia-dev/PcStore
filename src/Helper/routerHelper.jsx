@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import HeroSection from "../components/HomeComponents/HeroSection";
 import PrivateRoute from "../components/PrivateRoute";
 import CartPage from "../pages/user/CartPage";
+import Profile from "../pages/user/Profile";
 
 export const allRouters = [
     //Public Routes
@@ -35,6 +36,12 @@ export const allRouters = [
     {
         path : "/cart",
         element : CartPage,
+        isPrivate : true,
+        role : "user"
+    },
+    {
+        path: "/profile",
+        element : Profile,
         isPrivate : true,
         role : "user"
     }

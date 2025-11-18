@@ -30,16 +30,8 @@ const CartPage = () => {
   const [showCheckout, setShowCheckout] = useState(false);
   useEffect(() => {
     const getAllProducts = async () => {
-      const products = await fetchProducts();
-      const keys = Object.keys(products);
-      const values = keys.map( key => products[key]).flat();
-
-      const productMap = {};
-      values.forEach((product) => {
-        productMap[product.id] = product;
-      });
-      
-     const initialCart = user.cart.map((item) => ({
+      const productMap = await fetchProducts(); 
+      const initialCart = user.cart.map((item) => ({
         ...productMap[item.id],
         itemQuantity: item.itemQuantity || 1
       }));
@@ -224,8 +216,9 @@ const CartPage = () => {
               )
             }
           </Card>
-          <Card>
+         
             {cartItems.length > 0 && (
+              <Card>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="flex items-center justify-between mb-6">
                   <span className="text-2xl font-semibold text-gray-800">Total:</span>
@@ -242,12 +235,13 @@ const CartPage = () => {
                  >
                 </Button>
               </div>
+              </Card>
             )}
-          </Card>
+          
           
           {
             showCheckout && (
-              <CheckoutComponent />
+              <CheckoutComponent setCartItems={setCartItems}/>
             )
               
           }

@@ -3,7 +3,7 @@
     {
       "id": "1",
       "username": "admin",
-      "password": "admin123",
+      "password": "admin1234",
       "role": "admin"
     },
     {
@@ -44,12 +44,7 @@
       "email": "asifarian320@gmail.com",
       "password": "123",
       "role": "user",
-      "cart": [
-        {
-          "id": "1761084234570",
-          "itemQuantity": 1
-        }
-      ]
+      "cart": []
     },
     {
       "id": "1762968544567",
@@ -75,6 +70,14 @@
           "itemQuantity": 1
         }
       ]
+    },
+    {
+      "id": "1763446679056",
+      "username": "Borhan Uddin",
+      "email": "uddin@gmail.com",
+      "password": "1234",
+      "role": "user",
+      "cart": []
     }
   ],
   "Products": {
@@ -271,6 +274,301 @@
         "location": "Nakshi"
       },
       "date": "2025-11-17T09:26:22.536Z",
+      "status": "Pending"
+    },
+    {
+      "id": "3372",
+      "userId": "1762511696111",
+      "info": {
+        "name": "Rabita",
+        "phone": "01793310237",
+        "location": "Nakshi"
+      },
+      "date": "2025-11-17T10:01:22.912Z",
+      "status": "Pending"
+    },
+    {
+      "id": "52b7",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Borhan Uddin",
+        "phone": "0011223344",
+        "location": "Nakshi"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 2
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 2
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 1
+        }
+      ],
+      "date": "2025-11-18T06:19:10.176Z",
+      "status": "Pending"
+    },
+    {
+      "id": "45a7",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Borhan Uddin",
+        "phone": "0011223344",
+        "location": "Nakshi"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 3
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 4
+        }
+      ],
+      "date": "2025-11-18T06:21:59.833Z",
+      "status": "Pending"
+    },
+    {
+      "id": "ccaa",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Borhan Uddin",
+        "phone": "0011223344",
+        "location": "Nakshi"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 3
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 4
+        }
+      ],
+      "date": "2025-11-18T06:30:36.064Z",
+      "status": "Pending"
+    },
+    {
+      "id": "e765",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Borhan Uddin",
+        "phone": "0011223344",
+        "location": "Nakshi"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 3
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 4
+        }
+      ],
+      "date": "2025-11-18T06:32:11.395Z",
+      "status": "Pending"
+    },
+    {
+      "id": "42ae",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Borhan Uddin",
+        "phone": "0011223344",
+        "location": "Nakshi"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 3
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 4
+        }
+      ],
+      "date": "2025-11-18T06:32:27.466Z",
+      "status": "Pending"
+    },
+    {
+      "id": "e956",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Asif Mia",
+        "phone": "01793310238",
+        "location": "uttar Badda"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 3
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 4
+        },
+        {
+          "id": "2761087234573",
+          "itemQuantity": 3
+        }
+      ],
+      "date": "2025-11-18T06:36:13.754Z",
+      "status": "Pending"
+    },
+    {
+      "id": "e689",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Asif Mia",
+        "phone": "01793310238",
+        "location": "uttar Badda"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 3
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 4
+        },
+        {
+          "id": "2761087234573",
+          "itemQuantity": 3
+        }
+      ],
+      "date": "2025-11-18T06:38:27.594Z",
+      "status": "Pending"
+    },
+    {
+      "id": "37ac",
+      "userId": "1763446679056",
+      "info": {
+        "name": "Asif Mia",
+        "phone": "01793310238",
+        "location": "uttar Badda"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 3
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761083234569",
+          "itemQuantity": 4
+        },
+        {
+          "id": "2761087234573",
+          "itemQuantity": 3
+        }
+      ],
+      "date": "2025-11-18T06:43:43.327Z",
+      "status": "Pending"
+    },
+    {
+      "id": "2bde",
+      "userId": "1762511696111",
+      "info": {
+        "name": "Asif Mia",
+        "phone": "01793310238",
+        "location": "uttar Badda"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 1
+        }
+      ],
+      "date": "2025-11-18T06:45:55.649Z",
+      "status": "Pending"
+    },
+    {
+      "id": "8fe4",
+      "userId": "1762511696111",
+      "info": {
+        "name": "Asif Mia",
+        "phone": "01793310238",
+        "location": "uttar Badda"
+      },
+      "products": [
+        {
+          "id": "1761081234567",
+          "itemQuantity": 1
+        },
+        {
+          "id": "1761082234568",
+          "itemQuantity": 1
+        }
+      ],
+      "date": "2025-11-18T06:48:14.707Z",
+      "status": "Pending"
+    },
+    {
+      "id": "014b",
+      "userId": "1762511696111",
+      "info": {
+        "name": "Asif Mia",
+        "phone": "01793310238",
+        "location": "uttar Badda"
+      },
+      "products": [
+        {
+          "id": "1761083234569",
+          "itemQuantity": 1
+        }
+      ],
+      "date": "2025-11-18T06:49:34.807Z",
+      "status": "Pending"
+    },
+    {
+      "id": "eab1",
+      "userId": "1762511696111",
+      "info": {
+        "name": "Asif Mia",
+        "phone": "01793310238",
+        "location": "uttar Badda"
+      },
+      "products": [
+        {
+          "id": "1761083234569",
+          "itemQuantity": 1
+        }
+      ],
+      "date": "2025-11-18T06:50:09.908Z",
       "status": "Pending"
     }
   ]
